@@ -67,6 +67,7 @@ public class App {
         String eID = in.nextLine();
 
         String errors = validateInput(fName, lName, zip, eID);
+        System.out.println(errors);
     }
 
     public static String validateInput(String fName, String lName, String zip, String eID) {
