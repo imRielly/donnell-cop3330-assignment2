@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+-Prompt and Store 5 Numbers
+-Sum the 5 numbers
+-Display Sum
+
+@enduml
