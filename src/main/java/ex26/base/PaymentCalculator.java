@@ -4,7 +4,7 @@
  */
 
 /*
-n = -(1/30) * log(1 + b/p * (1 - (1 + i)^30)) / log(1 + i)
+n = -(1/ex30) * log(1 + b/p * (1 - (1 + i)^ex30)) / log(1 + i)
 where
 
 n is the number of months.

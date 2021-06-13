@@ -58,7 +58,7 @@ public class App {
             System.out.print("What is the rate of return? ");
                 String input = in.nextLine();
                 try {
-                    rate = Integer.parseInt(input);
+                    rate = Double.parseDouble(input);
                     if(rate > 0) {
                         fail = false;
                     } else {
