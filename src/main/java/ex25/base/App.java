@@ -31,7 +31,7 @@ Create a GUI application or web application that displays graphical feedback as 
 As someone enters a password, determine its strength and display the result
  */
 
-package ex25;
+package ex25.base;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

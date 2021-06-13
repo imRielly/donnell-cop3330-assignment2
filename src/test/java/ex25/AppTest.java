@@ -1,5 +1,6 @@
 package ex25;
 
+import ex25.base.App;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +10,7 @@ class AppTest {
     @Test
     void passwordValidator_Password123_2() {
         String password = "Password123";
-        assertEquals(2,App.passwordValidator(password));
+        assertEquals(2, App.passwordValidator(password));
     }
 
     @Test
