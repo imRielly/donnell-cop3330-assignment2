@@ -108,9 +108,9 @@ public class App {
 
     public static int generateWinner(int difficulty) {
         return switch (difficulty) {
-            case 1 -> (int) (Math.random() * (10 - 1)) + 1;
-            case 2 -> (int) (Math.random() * (100 - 1)) + 1;
-            case 3 -> (int) (Math.random() * (1000 - 1)) + 1;
+            case 1 -> (int) (Math.random() * (11 - 1)) + 1;
+            case 2 -> (int) (Math.random() * (101 - 1)) + 1;
+            case 3 -> (int) (Math.random() * (1001 - 1)) + 1;
             default -> -1;
         };
     }
