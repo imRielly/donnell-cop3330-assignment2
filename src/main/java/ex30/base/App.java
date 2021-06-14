@@ -37,10 +37,14 @@ public class App {
     public static void main(String[] args) {
         for (int r = 1; r <= 12; r++) {
             for (int c = 1; c <= 12; c++) {
-                String result = String.format("%4d", c*r);
+                String result = generateResult(c, r);
                 System.out.print(result);
             }
             System.out.println();
         }
+    }
+
+    public static String generateResult(int c, int r) {
+        return String.format("%4d", c*r);
     }
 }
