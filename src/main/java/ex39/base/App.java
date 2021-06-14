@@ -49,7 +49,6 @@ public class App {
         for (int i = 0; i < records.size(); i++) {
             output.append(getRow(records, i));
         }
-        //output += records.get(0).toString();
         System.out.println(output);
     }
 
