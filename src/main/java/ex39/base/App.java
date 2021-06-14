@@ -36,10 +36,7 @@ Store the data using a list of maps.
 
 package ex39.base;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) {
@@ -65,34 +62,44 @@ public class App {
         List<Map<String, String>> records = new ArrayList<>();
         Map<String, String> record1 = new HashMap<>();
         record1.put("name","Jacquelyn Jackson   |");
+        record1.put("sort","Jackson");
         record1.put("position"," DBA               |");
         record1.put("seperationdate","");
         records.add(record1);
         Map<String, String> record2 = new HashMap<>();
         record2.put("name","Jake Jacobson       |");
+        record2.put("sort","Jacobson");
         record2.put("position"," Programmer        |");
         record2.put("seperationdate","");
         records.add(record2);
         Map<String, String> record3 = new HashMap<>();
         record3.put("name","John Johnson        |");
+        record3.put("sort","Johnson");
         record3.put("position"," Manager           |");
         record3.put("seperationdate"," 2016-12-31");
         records.add(record3);
         Map<String, String> record4 = new HashMap<>();
         record4.put("name","Michaela Michaelson |");
+        record4.put("sort","Michaelson");
         record4.put("position"," District Manager  |");
         record4.put("seperationdate"," 2015-12-19");
         records.add(record4);
         Map<String, String> record5 = new HashMap<>();
         record5.put("name","Sally Weber         |");
+        record5.put("sort","Weber");
         record5.put("position"," Web Developer     |");
         record5.put("seperationdate"," 2015-12-18");
         records.add(record5);
         Map<String, String> record6 = new HashMap<>();
         record6.put("name","Tou Xiong           |");
+        record6.put("sort","Xiong");
         record6.put("position"," Software Engineer |");
         record6.put("seperationdate"," 2016-10-05");
         records.add(record6);
+
+        Collections.sort(records, mapComparator);
         return records;
     }
+
+    public static Comparator<Map<String, String>> mapComparator = Comparator.comparing(m -> m.get("sort"));
 }

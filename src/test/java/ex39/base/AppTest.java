@@ -30,4 +30,14 @@ class AppTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    void getRow_5() {
+        int row = 5;
+        List<Map<String,String>> records;
+        records = generateRecords();
+        String actual = getRow(records, row);
+        String expected = "Tou Xiong           | Software Engineer | 2016-10-05\n";
+        assertEquals(expected,actual);
+    }
+
 }
